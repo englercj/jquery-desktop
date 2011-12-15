@@ -1,0 +1,122 @@
+/* File Name : window.css
+ **********
+ * Purpose   : Styles and layouts for window elements
+ **********
+ * Author    : Chad Engler
+ **********
+ * Created On: 7/28/2011 11:05am
+ **********
+ */
+
+/* * * * * * * * * * * * * * * *\
+ * Window Styles               *
+\* * * * * * * * * * * * * * * */
+div.window {
+    position:absolute;
+    top:100px;
+    left:200px;
+    
+    min-width:500px; 
+    min-height:300px;
+    width:800px;
+    height:400px;
+    
+    padding:5px;
+    z-index:5; 
+}
+
+div.window div.windowHandle {
+    position:relative;
+    top:0;
+    left:0;
+    
+    height:15px;
+    
+    cursor:move;
+    font-size:1.5em;
+    
+    line-height:15px;
+    
+    margin-top:-5px;
+    padding:10px 2px;
+}
+
+div.window div.windowHandle img.windowIcon {
+    margin:0 10px 0 5px;
+    float:left;
+}
+
+div.window div.windowContent {
+    position:relative;
+    
+    min-width:490px;
+    min-height:270px;
+    
+    overflow:auto;
+    
+    padding:0 2px;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Vertical Tab Styles         *
+\* * * * * * * * * * * * * * * */
+ul.verticalTabs { 
+    height:100%;
+    width:150px;
+    padding:0 1px;
+    float:left
+}
+
+ul.verticalTabs li {
+    height:35px;
+    display:block;
+    padding:5px;
+}
+
+ul.verticalTabs li a {
+    display:block;
+    height:34px;
+    width:auto;
+    line-height:35px;
+    
+    /*padding-top:1px;*/
+}
+
+ul.verticalTabs li a:hover { padding:0; }
+
+div.verticalTabContent {
+    margin-left:156px;
+    padding:0 1px;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Settings Panel Styles       *
+\* * * * * * * * * * * * * * * */
+img.wallpaperImg {
+    margin:5px;
+    width:100px;
+    height:100px;
+    padding:2px;
+}
+
+div.wallpaperImgContainer {
+    overflow:auto;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Browser Panel Styles        *
+\* * * * * * * * * * * * * * * */
+input.browserAddrBar { width:100%; margin-left:-1px; }
+iframe.browserFrame { width:100%; }
+
+/* * * * * * * * * * * * * * * *\
+ * Window Control Button Styles*
+\* * * * * * * * * * * * * * * */
+div.windowControlBtn {
+    display:block;
+    float:right;
+    margin:-4px 1px 1px 1px;
+    padding:3px 5px 5px 3px;
+    height:15px;
+    width:15px;
+}

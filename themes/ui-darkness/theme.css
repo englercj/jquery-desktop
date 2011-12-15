@@ -1,0 +1,189 @@
+/* File Name : theme.css
+ **********
+ * Purpose   : The dark-hive theme file
+ **********
+ * Author    : Chad Engler
+ **********
+ * Created On: 8/2/2011 1:30pm
+ **********
+ */
+
+
+/* Clearfix has some issues in 1.8*/
+.ui-helper-clearfix:after { }
+.ui-helper-clearfix {
+        overflow: hidden;
+        zoom: 1; /* required for ie hasLayout */
+}
+
+html {}
+body { font-size: 12px; font-family: arial, sans-serif; }
+a { text-decoration:none; cursor:default; color:#FFF; }
+
+h1 { font-size:1.4em; }
+h2 { font-size:1.2em; }
+h3 { font-size:1em; }
+h4 { font-size:0.8em; }
+
+/* * * * * * * * * * * * * * * *\
+ * Desktop Styles              *
+\* * * * * * * * * * * * * * * */
+div#wrapper { background-color:#000; }
+
+div#desktop {}
+
+
+img#wallpaper {}
+
+.dragStart {}
+
+/* * * * * * * * * * * * * * * *\
+ * Desktop Icon Styles         *
+\* * * * * * * * * * * * * * * */
+a.desktopIcon {
+    color:#FFF;
+    text-shadow: 0 1px 2px #000;
+    border-radius:5px;
+}
+
+a.desktopIcon:hover { 
+    border:solid 1px #FFF;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+a.desktopIcon img {}
+
+a.desktopIcon.mouseDown { background-color:rgba(255, 255, 255, 0.8); }
+a.desktopIcon.dragStart { opacity:0.5; background-color:rgb(100, 100, 100); }
+
+/* * * * * * * * * * * * * * * *\
+ * Window Styles               *
+\* * * * * * * * * * * * * * * */
+div.window {
+    /* rgba(230, 230, 255, 0.4) */
+    background:0 -400px url('../../imgs/bgs/ui/glossLines.png') repeat rgba(30, 40, 30, 0.4);
+    
+    border:solid 1px #222;/*rgb(138, 138, 153);*/
+    border-radius:10px 10px 5px 5px;
+}
+
+div.window div.windowHandle {
+    color:#FFF;
+    /*top, right, bottom, left*/
+    text-shadow:0 -1px 15px #222, 1px 0 15px #222, 0 1px 15px #222, -1px 0 15px #222;
+}
+
+div.window div.windowContent {
+    background:#333;
+    color:#FFF;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Vertical Tab Styles         *
+\* * * * * * * * * * * * * * * */
+ul.verticalTabs {
+    border-right:solid 1px #555;
+}
+
+ul.verticalTabs li a {
+    text-align:center;
+}
+
+ul.verticalTabs li a:hover {}
+
+ul.verticalTabs li {}
+
+div.verticalTabContent {}
+
+/* * * * * * * * * * * * * * * *\
+ * Window Control Button Styles*
+\* * * * * * * * * * * * * * * */
+div.windowControlBtn { cursor:pointer; }
+
+/* * * * * * * * * * * * * * * *\
+ * Browser Panel Styles        *
+\* * * * * * * * * * * * * * * */
+input.browserAddrBar { border:solid 1px #888; }
+
+/* * * * * * * * * * * * * * * *\
+ * Bar Specifc Styles          *
+\* * * * * * * * * * * * * * * */
+div#menu-bar {
+    background:bottom left url("../../imgs/bgs/ui/menuBar.png") repeat-x #E5E5E5;
+    border-bottom:1px solid #454545;
+}
+
+div#prog-bar {
+    background:top left url("../../imgs/bgs/ui/programBar_75p.png") repeat-x Transparent;
+    color:#FFF;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Menu Bar Items              *
+\* * * * * * * * * * * * * * * */
+a.menubarClock {
+    color:#222;
+    text-shadow:0 1px 1px #FFF;
+}
+
+img.menubarClock {}
+
+a.menubarItem {
+    color:#222;
+    text-shadow:0 1px 1px #FFF;
+}
+
+a.menubarItem:hover {
+    background:left 10px url("../../imgs/bgs/ui/menuBar_h.png") repeat-x #BFBFBF;
+}
+
+a.menubarItem img {}
+
+div.menubarSubMenu {
+   background-color:#E5E5E5;
+   border-radius:0 0 10px 10px;
+}
+
+div.menubarSubMenu a {
+    border-radius:5px;
+}
+
+div.menubarSubMenu a:hover {
+    border-top:solid 1px #808080;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Programbar Clickable Icons  *
+\* * * * * * * * * * * * * * * */
+a.programbarIcon {
+    border-radius:5px;
+}
+
+a.programbarIcon:hover { 
+    background-color: rgba(255, 255, 255, 0.5);
+    border:solid 1px #FFF;
+}
+
+a.programbarIcon img {}
+
+a.programbarIcon.mouseDown { opacity:0.8; background-color:#EEE; }
+a.programbarIcon.dragStart { opacity:0.5; background-color:#555; }
+
+/* * * * * * * * * * * * * * * *\
+ * Programbar Panels           *
+\* * * * * * * * * * * * * * * */
+a.programbarPanel {
+    color:#FFF;
+    text-shadow: 0 1px 2px #000;
+    border-radius:5px;
+}
+
+a.programbarPanel img {}
+
+a.programbarPanel:hover { 
+    border:solid 1px #FFF;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+a.programbarPanel.mouseDown {  }
+a.programbarPanel.dragStart {  }

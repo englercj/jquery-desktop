@@ -1,0 +1,1 @@
+# README for new jQuery Desktop

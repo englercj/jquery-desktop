@@ -1,0 +1,128 @@
+/* File Name : bar.css
+ **********
+ * Purpose   : Styles and layouts for the different desktop/menu bars
+ **********
+ * Author    : Chad Engler
+ **********
+ * Created On: 7/28/2011 11:05am
+ **********
+ */
+
+/* * * * * * * * * * * * * * * *\
+ * Bar Specifc Styles          *
+\* * * * * * * * * * * * * * * */
+div#menu-bar {
+    height:25px;
+    line-height:25px;
+    
+    padding:0 10px 0 20px;
+    top:0;
+}
+
+div#prog-bar {
+    bottom:0;
+    font-size:1em;
+    line-height: 30px;
+    
+    height:30px;
+    
+    overflow: hidden;
+    padding:5px 10px;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Menu Bar Items              *
+\* * * * * * * * * * * * * * * */
+a.menubarClock {
+    height:25px;
+    padding:0 10px;
+    display:block;
+    float:right;
+}
+
+img.menubarClock {
+    padding:4px 0;
+    display:block;
+    float:right;
+}
+
+a.menubarItem {
+    height:25px;
+    padding:0 10px;
+    display:block;
+    float:left;
+}
+
+a.menubarItem:hover {}
+
+a.menubarItem img {
+    margin:5px 5px 5px 0;
+    float:left;
+}
+
+div.menubarSubMenu {
+   position:absolute;
+   top:26px;
+   margin-left:-10px;
+   padding:5px;
+   z-index:99;
+}
+
+div.menubarSubMenu a {
+    padding:2px 20px 2px 10px;
+    float:none;
+}
+
+div.menubarSubMenu a:hover {
+    padding-top:1px;
+}
+
+/* * * * * * * * * * * * * * * *\
+ * Programbar Clickable Icons  *
+\* * * * * * * * * * * * * * * */
+a.programbarIcon {
+    float:right;
+    position:relative;
+    width:35px;
+    
+    padding:2px 2px 1px 1px;
+}
+
+a.programbarIcon:hover {
+    padding:1px 1px 0 0;
+}
+
+a.programbarIcon img {
+    display:block;
+    margin:0 auto;
+}
+
+a.programbarIcon.mouseDown {  }
+a.programbarIcon.dragStart {  }
+
+/* * * * * * * * * * * * * * * *\
+ * Programbar Panels           *
+\* * * * * * * * * * * * * * * */
+a.programbarPanel {
+    width:150px;
+    height:25px;
+    padding:3px;
+    
+    display:block;
+    line-height:25px;
+    
+    float:left;
+}
+
+a.programbarPanel img {
+    margin:5px;
+    
+    float:left;
+}
+
+a.programbarPanel:hover {
+    padding:2px;
+}
+
+a.programbarPanel.mouseDown {  }
+a.programbarPanel.dragStart {  }

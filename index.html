@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <title>jQuery Desktop</title>
+        
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" />
+    <link rel="stylesheet" type="text/css" href="css/bar.css" />
+    <link rel="stylesheet" type="text/css" href="css/window.css" />
+    
+    <link id="jqueryUI" rel="stylesheet" type="text/css" href="themes/dark-hive/jquery-ui-1.8.14.custom.css" />
+    <link id="themeUI" rel="stylesheet" type="text/css" href="themes/dark-hive/theme.css" />
+    
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="js/libraries/jquery-1.6.2.js"></script>
+    <script src="js/libraries/jquery-ui-1.8.14.min.js"></script>
+    
+    <script src="js/desktop/settings.js"></script>
+    <script src="js/desktop/util/util.js"></script>
+    
+    <script src="js/desktop/bars/programBar.js"></script>
+    <script src="js/desktop/bars/menuBar.js"></script>
+    
+    <script src="js/desktop/icons/icon.js"></script>
+    
+    <script src="js/desktop/windows/window.js"></script>
+    <script src="js/desktop/windows/built-ins/browser.js"></script>
+    <script src="js/desktop/windows/built-ins/network_panel.js"></script>
+    <script src="js/desktop/windows/built-ins/settings_panel.js"></script>
+    
+    <script src="js/desktop/jquery.desktop.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('div#wrapper').Desktop();
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <img id="wallpaper" src="" />
+        <div id="menu-bar"></div>
+        <div id="desktop"></div>
+        <div id="prog-bar"></div>
+    </div>
+</body>
+
+</html>
